@@ -1,0 +1,20 @@
+{
+  "name": "react-native-step-view-navigation",
+  "version": "1.0.0",
+  "description": "A step view forms, wonderful for long forms",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airtonazevedo/react-native-step-view-navigation.git"
+  },
+  "keywords": ["react", "native", "step", "animated", "swap", "form", "view", "navigation"],
+  "author": "airtonazevedo <airton.mtaz@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/airtonazevedo/react-native-step-view-navigation/issues"
+  },
+  "homepage": "https://github.com/airtonazevedo/react-native-step-view-navigation#readme",
+  "dependencies": {
+    "react-native-animatable": "^1.3.3"
+  }
+}
