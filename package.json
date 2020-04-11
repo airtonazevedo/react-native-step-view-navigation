@@ -1,8 +1,8 @@
 {
   "name": "react-native-step-view-navigation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A step view forms, wonderful for long forms",
-  "main": "index.js",
+  "main": "index.tsx",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/airtonazevedo/react-native-step-view-navigation.git"
