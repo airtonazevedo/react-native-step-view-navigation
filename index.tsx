@@ -21,8 +21,6 @@ export const StepView = stepview;
 export function StepNavigation(props: Props) {
     const { step } = props;
     const steps = props.children.length;
-    //console.log('\n\nStep\n\n\n')
-    //console.log(props.children[0].props);
     const [width, setWidth] = useState(0)
 
     const viewRef = useRef(null)
@@ -50,7 +48,7 @@ export function StepNavigation(props: Props) {
     //let dotMargin = { top: props.dotsMargin}
     let dotMargin = {}
     if (props.dotsPosition == 'Top') {
-        dotMargin = { bottom: props.dotsMargin }
+        dotMargin = { top: props.dotsMargin }
     }
     else {
         dotMargin = { bottom: props.dotsMargin }
@@ -59,11 +57,6 @@ export function StepNavigation(props: Props) {
     return (
 
         <View style={{ flexGrow: 1 }}>
-            <View style={[styles.dotsContainer, dotMargin]}>
-                {
-                    props.dots && Dots
-                }
-            </View>
             <Animatable.View
                 onLayout={(event) => {
                     var { x, y, width, height } = event.nativeEvent.layout;
@@ -75,6 +68,12 @@ export function StepNavigation(props: Props) {
                     props.children
                 }
             </Animatable.View>
+            <View style={[styles.dotsContainer, dotMargin]}>
+                {
+                    props.dots && Dots
+                }
+            </View>
+        
         </View>
     );
 }
@@ -94,7 +93,6 @@ StepNavigation.defaultProps = {
 const styles = StyleSheet.create({
     dotsContainer: {
         //backgroundColor: '#aaa',
-        top: 100,
         left: '0%',
         width: '100%',
         height: 30,
