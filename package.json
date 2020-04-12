@@ -1,6 +1,6 @@
 {
   "name": "react-native-step-view-navigation",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A step view forms, wonderful for long forms",
   "main": "index.tsx",
   "repository": {
